@@ -9,7 +9,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: inherit;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -63,6 +64,145 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+/** General styles **/
+body > main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+article {
+  flex-grow: 1;
+  max-width: min(400px, 90%);
+}
+
+header {
+  padding: 0.6em 1.4em;
+  border-radius: 1em;
+}
+
+main.content {
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  padding: 1em 1.4em;
+  margin-top: 1em;
+}
+
+footer {
+  padding: 1.4em;
+  padding-top: 0;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 55px;
+}
+
+/** Utility classes **/
+.text-pale-orange {
+  color: hsl(33deg, 100%, 98%);
+}
+
+.text-dark-brown {
+  color: hsl(25deg, 47%, 15%);
+}
+
+.text-brown {
+  color: hsl(28deg, 10%, 53%);
+}
+
+.primary-header {
+  color: hsl(25deg, 47%, 15%);
+}
+
+.bg-pale-orange {
+  background-color: hsl(33deg, 100%, 98%);
+}
+
+.bg-cream {
+  background-color: hsl(27deg, 66%, 92%);
+}
+
+.bg-soft-red {
+  background-color: hsl(10deg, 79%, 65%);
+}
+
+.text-tiny {
+  font-size: 13px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/** Component styles **/
+.title {
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  padding-block: 0.3em;
+}
+
+.total-credit {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.primary-header {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.graph {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.3em;
+  height: 200px;
+}
+
+@media screen and (min-width: 40em) {
+  .graph {
+    height: 170px;
+  }
+}
+.graph > div {
+  flex: 1;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.g-item {
+  align-items: flex-end;
+  border-radius: 0.25em;
+  background-color: hsl(10deg, 79%, 65%);
+}
+
+.g-item + p {
+  text-align: center;
+}
+
+footer > div {
+  border-top: 1px solid hsl(28deg, 10%, 53%);
+  padding-top: 1em;
+}
+
+.expense {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.right-align {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
