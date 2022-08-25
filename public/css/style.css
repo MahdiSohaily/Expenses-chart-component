@@ -163,18 +163,19 @@ img {
 
 .graph {
   display: flex;
-  gap: 1em;
+  gap: 0.8em;
   margin-top: 1.3em;
   height: 200px;
 }
 
 @media screen and (min-width: 40em) {
   .graph {
-    height: 170px;
+    height: 180px;
   }
 }
 .graph > div {
   flex: 1;
+  position: relative;
   height: inherit;
   display: flex;
   flex-direction: column;
@@ -182,6 +183,7 @@ img {
 }
 
 .g-item {
+  position: relative;
   align-items: flex-end;
   border-radius: 0.25em;
   background-color: hsl(10deg, 79%, 65%);
@@ -189,6 +191,23 @@ img {
 
 .g-item + p {
   text-align: center;
+}
+
+.g-item:hover .tag {
+  display: block;
+}
+
+.tag {
+  display: none;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.24em;
+  background-color: hsl(25deg, 47%, 15%);
+  color: hsl(33deg, 100%, 98%);
+  font-size: 14px;
+  padding: 0.25em;
 }
 
 footer > div {
