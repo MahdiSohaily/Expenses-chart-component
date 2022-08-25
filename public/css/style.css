@@ -193,6 +193,10 @@ img {
   text-align: center;
 }
 
+.g-item:hover {
+  opacity: 0.8;
+}
+
 .g-item:hover .tag {
   display: block;
 }
