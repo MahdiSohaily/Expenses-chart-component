@@ -1,0 +1,166 @@
+@use "__rootStyles" as root;
+@use "_cssReset";
+
+/** General styles **/
+body > main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+article {
+  flex-grow: 1;
+  max-width: min(400px, 90%);
+}
+
+header {
+  padding: 0.6em 1.4em;
+  border-radius: 1em;
+}
+
+main.content {
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  padding: 1em 1.4em;
+  margin-top: 1em;
+}
+
+footer {
+  padding: 1.4em;
+  padding-top: 0;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 55px;
+}
+
+/** Utility classes **/
+.text-pale-orange {
+  color: root.$pale-orange;
+}
+
+.text-dark-brown {
+  color: root.$dark-brown;
+}
+
+.text-brown {
+  color: root.$medium-brown;
+}
+
+%text-dark-brown {
+  color: root.$dark-brown;
+}
+
+.bg-pale-orange {
+  background-color: root.$pale-orange;
+}
+
+.bg-cream {
+  background-color: root.$cream;
+}
+
+.bg-soft-red {
+  background-color: root.$soft-red;
+}
+
+.text-tiny {
+  font-size: 13px;
+}
+
+.bold {
+  font-weight: root.$fw-bold;
+}
+/** Component styles **/
+.title {
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  padding-block: 0.3em;
+}
+
+.total-credit {
+  font-weight: root.$fw-bold;
+  font-size: 25px;
+}
+
+.primary-header {
+  @extend %text-dark-brown;
+  font-weight: root.$fw-bold;
+  font-size: 23px;
+}
+
+.graph {
+  display: flex;
+  gap: 0.8em;
+  margin-top: 1.3em;
+  height: 200px;
+}
+
+@media screen and (min-width: 40em) {
+  .graph {
+    height: 180px;
+  }
+}
+
+.graph > div {
+  flex: 1;
+  position: relative;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.g-item {
+  position: relative;
+  align-items: flex-end;
+  border-radius: 0.25em;
+  background-color: root.$soft-red;
+}
+
+.g-item + p {
+  text-align: center;
+}
+
+.g-item:hover {
+  opacity: 0.8;
+}
+
+.g-item:hover .tag {
+  display: block;
+}
+
+.tag {
+  display: none;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.24em;
+  background-color: root.$dark-brown;
+  color: root.$pale-orange;
+  font-size: 14px;
+  padding: 0.25em;
+}
+
+footer > div {
+  border-top: 1px solid root.$medium-brown;
+  padding-top: 1em;
+}
+
+.expense {
+  font-size: 34px;
+  font-weight: root.$fw-bold;
+}
+
+.right-align {
+  text-align: right;
+}

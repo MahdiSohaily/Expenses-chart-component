@@ -4,41 +4,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expense chart component">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Expenses chart component</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./public/css/style.css">
 </head>
 
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="bg-cream">
+    <article>
+      <header class="flex-container bg-soft-red">
+        <div>
+          <p class="title text-pale-orange">My balance</p>
+          <p class="total-credit text-pale-orange">$921.48</p>
+        </div>
+        <img width="70" height="35" src="./public/images/logo.svg" alt="logo">
+      </header>
+      <main class="content bg-pale-orange">
+        <h1 class="primary-header">Spending - Last 7 days</h1>
+        <div class="graph">
+          <div>
+            <div class="g-item mon">
+              <div class="tag"></div>
+            </div>
+            <p class="text-tiny text-brown">mon</p>
+          </div>
+          <div>
+            <div class="g-item tue">
+              <div class="tag"></div>
+            </div>
+            <p class="text-tiny text-brown">tue</p>
+          </div>
+          <div>
+            <div class="g-item wed">
+              <div class="tag"></div>
+            </div>
+            <p class="text-tiny text-brown">wed</p>
+          </div>
+          <div>
+            <div class="g-item thu">
+              <div class="tag"></div>
+            </div>
+            <p class="text-tiny text-brown">thu</p>
+          </div>
+          <div>
+            <div class="g-item fri">
+              <div class="tag"></div>
+            </div>
+            <p class="text-tiny text-brown">fri</p>
+          </div>
+          <div>
+            <div class="g-item sat">
+              <div class="tag"></div>
+            </div>
+            <p class="text-tiny text-brown">sat</p>
+          </div>
+          <div>
+            <div class="g-item sun">
+              <div class="tag"></div>
+            </div>
+            <p class="text-tiny text-brown">sun</p>
+          </div>
+        </div>
+      </main>
+      <footer class="bg-pale-orange">
+        <div class="flex-container">
+          <div>
+            <p class="text-tiny text-brown ">Total this month</p>
+            <p class="text-dark-brown expense">$478.33</p>
+          </div>
+          <div>
+            <p class="text-dark-brown text-tiny bold right-align">+2.4%</p>
+            <p class="text-tiny text-brown">from last month</p>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <script src="./main.js"></script>
 </body>
 
 </html>
