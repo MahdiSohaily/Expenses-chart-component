@@ -13,8 +13,8 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
 }
 
@@ -55,13 +55,25 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
+:root {
+  --soft-red: $soft-red;
+  --cyan: $cyan;
+  --dark-brown: $dark-brown;
+  --medium-brown: $medium-brown;
+  --cream: $cream;
+  --pale-orange: $pale-orange;
+  --font-size: $font-size;
+  --fw-regular: $fw-regular;
+  --fw-bold: $fw-bold;
+}
+
+/*# sourceMappingURL=rootStyles.css.map */
