@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/testimonialsgridsectionmain-yZAI0suCGf)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/expenseschartcomponent-SIn-YlUefm)
 - Live Site URL: [Live site URL](https://mahdisohaily.github.io/Expenses-chart-component/)
 
 ## My process
